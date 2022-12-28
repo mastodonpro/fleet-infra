@@ -1,0 +1,55 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: kubernetes-dashboard
+spec:
+  releaseName: kubernetes-dashboard
+  chart:
+    spec:
+      chart: kubernetes-dashboard
+      sourceRef:
+        kind: HelmRepository
+        name: kubernetes-dashboard
+        namespace: flux-system
+      version: "5.2.0"
+  interval: 1h0m0s
+  install:
+    remediation:
+      retries: 3
+  values:  # https://github.com/kubernetes/dashboard/blob/master/aio/deploy/helm-chart/kubernetes-dashboard/values.yaml
+    settings:
+      clusterName: base  # kustomization
+      itemsPerPage: 50
+    pinnedCRDs:
+      - kind: customresourcedefinition
+        name: kustomizations.kustomize.toolkit.fluxcd.io
+        displayName: Kustomizations
+        namespaced: true
+      - kind: customresourcedefinition
+        name: gitrepositories.source.toolkit.fluxcd.io
+        displayName: Git Repositories
+        namespaced: true
+      - kind: customresourcedefinition
+        name: helmrepositories.source.toolkit.fluxcd.io
+        displayName: Helm Repositories
+        namespaced: true
+      - kind: customresourcedefinition
+        name: helmcharts.source.toolkit.fluxcd.io
+        displayName: Helm Charts
+        namespaced: true
+      - kind: customresourcedefinition
+        name: helmreleases.helm.toolkit.fluxcd.io
+        displayName: Helm Releases
+        namespaced: true
+      - kind: customresourcedefinition
+        name: imagerepositories.image.toolkit.fluxcd.io
+        displayName: Image Repositories
+        namespaced: true
+      - kind: customresourcedefinition
+        name: imagepolicies.image.toolkit.fluxcd.io
+        displayName: Image Policies
+        namespaced: true
+      - kind: customresourcedefinition
+        name: imageupdateautomations.image.toolkit.fluxcd.io
+        displayName: Image Update Automations
+        namespaced: true
