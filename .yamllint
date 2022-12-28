@@ -2,6 +2,7 @@
 extends: default
 
 rules:
+  empty-lines: disable  # until https://github.com/fluxcd/terraform-provider-flux/pull/351 is merged
   document-start: disable
   indentation:
     indent-sequences: whatever
