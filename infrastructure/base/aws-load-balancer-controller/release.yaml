@@ -19,6 +19,6 @@ spec:
   # https://github.com/aws/eks-charts/blob/master/stable/aws-load-balancer-controller/values.yaml
   values:
     serviceAccount:
-      create: false
+      create: true  # IRSA role is being created with terraform
       name: aws-load-balancer-controller
     clusterName: base  # kustomization
