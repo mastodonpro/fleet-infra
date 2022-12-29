@@ -6,4 +6,4 @@ metadata:
 spec:
   values:
     settings:
-      clusterName: staging
+      clusterName: staging_aws_eu-central-1
