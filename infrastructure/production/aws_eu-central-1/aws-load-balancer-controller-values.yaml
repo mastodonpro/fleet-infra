@@ -5,4 +5,4 @@ metadata:
   namespace: kube-system
 spec:
   values:
-    clusterName: staging_aws_eu-central-1
+    clusterName: production_aws_eu-central-1
