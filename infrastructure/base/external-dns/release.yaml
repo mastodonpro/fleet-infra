@@ -19,7 +19,7 @@ spec:
   # https://github.com/bitnami/charts/blob/master/bitnami/external-dns/values.yaml
   values:
     serviceAccount:
-      create: false  # is being created by eksctl
+      create: true  # IRSA role is being created with terraform
       name: external-dns
     provider: aws
     policy: sync  # also delete records after resource removal
