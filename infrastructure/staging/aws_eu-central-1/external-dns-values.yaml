@@ -5,6 +5,8 @@ metadata:
   namespace: external-dns
 spec:
   values:
-    txtOwnerId: aws-eu-central-1-staging
+    serviceAccount:
+      annotations:
+        eks.amazonaws.com/role-arn: arn:aws:iam::908023327186:role/external-dns
     domainFilters:
     - mastodon-st.com

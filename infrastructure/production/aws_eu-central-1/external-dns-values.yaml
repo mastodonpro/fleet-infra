@@ -5,6 +5,8 @@ metadata:
   namespace: external-dns
 spec:
   values:
-    txtOwnerId: aws-eu-central-1-production
+    serviceAccount:
+      annotations:
+        eks.amazonaws.com/role-arn: arn:aws:iam::150126189359:role/external-dns
     domainFilters:
     - mastodonpro.com

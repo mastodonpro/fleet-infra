@@ -21,11 +21,11 @@ spec:
     serviceAccount:
       create: true  # IRSA role is being created with terraform
       name: external-dns
+      annotations: # kustomization
     provider: aws
     policy: sync  # also delete records after resource removal
     aws:
       region: "eu-west-1"
       zoneType: public
-    txtOwnerId:  # kustomization
     domainFilters:  # kustomization
     - example.com
