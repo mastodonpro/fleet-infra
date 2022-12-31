@@ -7,5 +7,5 @@ spec:
   values:
     serviceAccount:
       annotations:
-        eks.amazonaws.com/role-arn: arn:aws:iam::908023327186:role/external-dns
+        eks.amazonaws.com/role-arn: arn:aws:iam::908023327186:role/aws-load-balancer-controller
     clusterName: staging_aws_eu-central-1
