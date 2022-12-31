@@ -5,4 +5,7 @@ metadata:
   namespace: kube-system
 spec:
   values:
+    serviceAccount:
+      annotations:
+        eks.amazonaws.com/role-arn: arn:aws:iam::150126189359:role/external-dns
     clusterName: production_aws_eu-central-1

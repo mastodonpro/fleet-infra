@@ -21,4 +21,5 @@ spec:
     serviceAccount:
       create: true  # IRSA role is being created with terraform
       name: aws-load-balancer-controller
+      annotations: # kustomization
     clusterName: base  # kustomization
