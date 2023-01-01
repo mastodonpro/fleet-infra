@@ -9,4 +9,4 @@ spec:
       annotations:
         eks.amazonaws.com/role-arn: arn:aws:iam::908023327186:role/external-dns
     domainFilters:
-    - mastodon-st.com
+      - mastodon-st.com

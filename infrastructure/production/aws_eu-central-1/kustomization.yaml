@@ -2,11 +2,11 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-- ../../base/aws-load-balancer-controller
-- ../../base/external-dns
-- ../../base/kubernetes-dashboard
-- ../../base/sources
+  - ../../base/aws-load-balancer-controller
+  - ../../base/external-dns
+  - ../../base/kubernetes-dashboard
+  - ../../base/sources
 patchesStrategicMerge:
-- aws-load-balancer-controller-values.yaml
-- external-dns-values.yaml
-- kubernetes-dashboard-values.yaml
+  - aws-load-balancer-controller-values.yaml
+  - external-dns-values.yaml
+  - kubernetes-dashboard-values.yaml
