@@ -1,0 +1,9 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: mastodon
+  namespace: mastodon
+spec:
+  values:
+    postgresql:
+      postgresqlHostname: rds-eu-central-1.cr4tmfjdkrn8.eu-central-1.rds.amazonaws.com
