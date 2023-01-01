@@ -5,4 +5,4 @@ namespace: mastodon
 resources:
   - namespace.yaml
   - release.yaml
-  - secret.yaml
+  - secret-postgres.yaml
