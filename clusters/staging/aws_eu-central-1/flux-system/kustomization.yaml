@@ -5,4 +5,5 @@ resources:
 - gotk-sync.yaml
 - gotk-components.yaml
 patchesStrategicMerge:
+- patch-ebs_csi.yaml
 - patch-sops.yaml
