@@ -3,15 +3,13 @@ kind: HelmRelease
 metadata:
   name: mastodon
 spec:
-  releaseName: mastodon
   chart:
     spec:
-      chart: mastodon
+      chart: ./
       sourceRef:
         kind: GitRepository
         name: mastodon
         namespace: flux-system
-      version: "4.0.0"
   interval: 1h0m0s
   install:
     remediation:
