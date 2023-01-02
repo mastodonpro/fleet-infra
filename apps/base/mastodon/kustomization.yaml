@@ -6,3 +6,4 @@ resources:
   - namespace.yaml
   - release.yaml
   - secret-postgres.yaml
+  - secret-redis.yaml
