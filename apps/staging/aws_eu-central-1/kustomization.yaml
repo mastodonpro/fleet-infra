@@ -5,6 +5,7 @@ resources:
   - ../../base/mastodon
 patchesStrategicMerge:
   - mastodon-secret-postgres.yaml
-  - mastodon-values-postgres.yaml
   - mastodon-secret-redis.yaml
+  - mastodon-secret-secrets.yaml
+  - mastodon-values-postgres.yaml
   - mastodon-values-redis.yaml

@@ -7,3 +7,4 @@ resources:
   - release.yaml
   - secret-postgres.yaml
   - secret-redis.yaml
+  - secret-secrets.yaml
