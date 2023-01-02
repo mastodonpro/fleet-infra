@@ -6,4 +6,4 @@ metadata:
 spec:
   values:
     postgresql:
-      postgresqlHostname: rds-eu-central-1.cr4tmfjdkrn8.eu-central-1.rds.amazonaws.com
+      postgresqlHostname: rds.cr4tmfjdkrn8.eu-central-1.rds.amazonaws.com
