@@ -4,4 +4,4 @@ metadata:
   name: kustomize-controller
   namespace: flux-system
   annotations:
-    eks.amazonaws.com/role-arn: arn:aws:iam::908023327186:role/AWSKMSSopsIAMPolicy_eu-central-1
+    eks.amazonaws.com/role-arn: arn:aws:iam::908023327186:role/kustomize-controller
