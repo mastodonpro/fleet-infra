@@ -1,7 +1,7 @@
 creation_rules:
   - path_regex: .*/staging/aws_eu-central-1/.*
     encrypted_regex: ^(data|stringData)$
-    kms: arn:aws:kms:eu-central-1:908023327186:alias/sops_eu-central-1
+    kms: arn:aws:kms:eu-central-1:908023327186:alias/sops
   - path_regex: .*/production/aws_eu-central-1/.*
     encrypted_regex: ^(data|stringData)$
-    kms: arn:aws:kms:eu-central-1:150126189359:alias/sops_eu-central-1
+    kms: arn:aws:kms:eu-central-1:150126189359:alias/sops
