@@ -1,0 +1,9 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: mastodon
+  namespace: mastodon
+spec:
+  values:
+    redis:
+      hostname: redis.pm161k.0001.euc1.cache.amazonaws.com
