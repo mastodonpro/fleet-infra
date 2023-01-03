@@ -22,11 +22,11 @@ spec:
       # have to be reset
       createAdmin:
         # @ignored
-        enabled: false
+        enabled: true
         # @ignored
-        username: not_gargron
+        username: admin
         # @ignored
-        email: not@example.com
+        email: sysadmin@mastodonpro.com
       cron:
         # -- run `tootctl media remove` every week
         removeMedia:
