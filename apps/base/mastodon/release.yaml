@@ -246,6 +246,7 @@ spec:
       port: 6379
       auth:
         existingSecret: "redis"
+      namespace: "mastodon"
 
     # @ignored
     service:
