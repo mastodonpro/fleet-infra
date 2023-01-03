@@ -6,4 +6,4 @@ metadata:
 spec:
   values:
     redis:
-      hostname: redis.pm161k.0001.euc1.cache.amazonaws.com
+      hostname: redis.redis.pm161k.euc1.cache.amazonaws.com
