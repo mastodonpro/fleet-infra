@@ -5,5 +5,9 @@ metadata:
   namespace: mastodon
 spec:
   values:
+    elasticsearch:
+      host: localhost
     postgresql:
       postgresqlHostname: rds.cr4tmfjdkrn8.eu-central-1.rds.amazonaws.com
+    redis:
+      hostname: redis.redis.pm161k.euc1.cache.amazonaws.com
