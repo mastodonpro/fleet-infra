@@ -17,3 +17,5 @@ spec:
             - social.mastodon-st.com
       hosts:
         - host: social.mastodon-st.com
+          paths:
+            - path: "/"
