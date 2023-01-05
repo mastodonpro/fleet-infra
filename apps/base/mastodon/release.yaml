@@ -91,13 +91,13 @@ spec:
         alb.ingress.kubernetes.io/healthcheck-path: /
         external-dns.alpha.kubernetes.io/hostname: "" # kustomization
       ingressClassName: alb
-      hosts:
-        - host: mastodon.local
-          paths:
-            - path: "/"
       tls:
         - hosts:
             - "" # kustomization
+      hosts:
+        - host: "" # kustomization
+          paths:
+            - path: "/"
 
     elasticsearch:
       enabled: false

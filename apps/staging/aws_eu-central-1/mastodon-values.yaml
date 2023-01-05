@@ -12,8 +12,8 @@ spec:
     ingress:
       annotations:
         external-dns.alpha.kubernetes.io/hostname: social.mastodon-st.com
-      hosts:
-        - host: social.mastodon-st.com
       tls:
         - hosts:
             - social.mastodon-st.com
+      hosts:
+        - host: social.mastodon-st.com
