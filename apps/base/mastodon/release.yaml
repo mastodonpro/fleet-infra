@@ -38,11 +38,13 @@ spec:
           resources:
             requests:
               storage: 10Gi
+          storageClassName: gp2
         system:
           accessMode: ReadWriteOnce
           resources:
             requests:
               storage: 100Gi
+          storageClassName: gp2
       s3:
         enabled: false
         access_key: ""
