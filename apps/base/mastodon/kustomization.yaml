@@ -5,8 +5,5 @@ namespace: mastodon
 resources:
   - namespace.yaml
   - release.yaml
-  - secret-elasticsearch.yaml
-  - secret-postgres.yaml
-  # as long as mastodon doesn't support TLS, we can't use authentification
-  # - secret-redis.yaml
+  - secret-aws.yaml
   - secret-secrets.yaml

@@ -4,9 +4,6 @@ kind: Kustomization
 resources:
   - ../../base/mastodon
 patchesStrategicMerge:
-  - mastodon-secret-elasticsearch.yaml
-  - mastodon-secret-postgres.yaml
-  # as long as mastodon doesn't support TLS, we can't use authentification
-  # - mastodon-secret-redis.yaml
+  - mastodon-secret-aws.yaml
   - mastodon-secret-secrets.yaml
   - mastodon-values-aws.yaml
