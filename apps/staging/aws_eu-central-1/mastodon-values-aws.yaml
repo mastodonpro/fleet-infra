@@ -6,8 +6,8 @@ metadata:
 spec:
   values:
     elasticsearch:
-      host: localhost
+      host: vpc-opensearch-7xpebshupfbc75oegbpqq3v24q.eu-central-1.es.amazonaws.com
     postgresql:
       postgresqlHostname: rds.cr4tmfjdkrn8.eu-central-1.rds.amazonaws.com
     redis:
-      hostname: redis.redis.pm161k.euc1.cache.amazonaws.com
+      hostname: redis.pm161k.ng.0001.euc1.cache.amazonaws.com
