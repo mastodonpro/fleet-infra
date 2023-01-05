@@ -84,21 +84,21 @@ spec:
     ingress:
       enabled: true
       annotations:
-        kubernetes.io/ingress.class: alb
         alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS":443}]'
         alb.ingress.kubernetes.io/scheme: internet-facing
         alb.ingress.kubernetes.io/target-type: ip
         alb.ingress.kubernetes.io/ssl-redirect: "443"
         alb.ingress.kubernetes.io/healthcheck-path: /
         external-dns.alpha.kubernetes.io/hostname: "" # kustomization
-      ingressClassName:
+      ingressClassName: alb
       hosts:
-        - host: "" # kustomization
+        - host: mastodon.local
           paths:
             - path: "/"
       tls:
         - hosts:
             - "" # kustomization
+
     elasticsearch:
       enabled: false
       host: # kustomization
