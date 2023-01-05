@@ -6,4 +6,5 @@ resources:
 patchesStrategicMerge:
   - mastodon-secret-aws.yaml
   - mastodon-secret-secrets.yaml
+  - mastodon-values.yaml
   - mastodon-values-aws.yaml

@@ -1,0 +1,19 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: mastodon
+  namespace: mastodon
+spec:
+  values:
+    mastodon:
+      local_domain: mastodon-st.com
+      # You must redirect the path LOCAL_DOMAIN/.well-known/ to WEB_DOMAIN/.well-known/ as described
+      web_domain: social.mastodon-st.com
+    ingress:
+      annotations:
+        external-dns.alpha.kubernetes.io/hostname: social.mastodon-st.com
+      hosts:
+        - host: social.mastodon-st.com
+      tls:
+        - hosts:
+            - social.mastodon-st.com
