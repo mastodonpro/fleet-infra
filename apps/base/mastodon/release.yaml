@@ -231,6 +231,7 @@ spec:
       enabled: false
       hostname: # kustomization
       port: 6379
+      password: ""
       # as long mastodon does not support TLS, this can't be used
       # auth:
       #   existingSecret: "redis"
